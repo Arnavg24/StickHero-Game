@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="578.0" maxWidth="300.0" minHeight="578.0" minWidth="300.0" prefHeight="578.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Scorecard">
+   <children>
+      <ImageView fitHeight="578.0" fitWidth="300.0">
+         <image>
+            <Image url="@Images/scorecard.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="11.0" layoutY="52.0" opacity="0.0" prefHeight="39.0" prefWidth="282.0" text="GAME OVER!" textFill="WHITE">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="124.0" opacity="0.0" text="SCORE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Grantha Sangam MN Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="193.0" opacity="0.0" text="BEST" />
+      <Label layoutX="25.0" layoutY="126.0" prefHeight="134.0" prefWidth="249.0" />
+      <Button fx:id="nameLabel1" layoutX="32.0" layoutY="394.0" mnemonicParsing="false" onAction="#switchToLanding" opacity="0.0" prefHeight="46.0" prefWidth="54.0" text="Home" />
+      <Button layoutX="205.0" layoutY="390.0" mnemonicParsing="false" onAction="#retry" opacity="0.0" prefHeight="46.0" prefWidth="65.0" text="Retry" />
+      <Button fx:id="ReviveButton" layoutX="72.0" layoutY="308.0" mnemonicParsing="false" onAction="#revive" prefHeight="46.0" prefWidth="163.0" text="Revive for 5 cherries" />
+      <Label fx:id="ScoreLabel" layoutX="130.0" layoutY="157.0" prefHeight="34.0" prefWidth="46.0" text="Score" />
+      <Label fx:id="BestScoreLabel" layoutX="134.0" layoutY="219.0" prefHeight="34.0" prefWidth="46.0" text="Best" />
+   </children>
+</AnchorPane>
