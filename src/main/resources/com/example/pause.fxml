@@ -6,12 +6,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="578.0" maxWidth="300.0" minHeight="578.0" minWidth="300.0" prefHeight="578.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Scorecard">
    <children>
       <ImageView fitHeight="578.0" fitWidth="300.0">
          <image>
-            <Image url="@Images/pause.JPG" />
+            <Image url="@Images/PauseScreen.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="56.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
@@ -24,9 +23,9 @@
             <Image url="@Images/playbutton.png" />
          </image>
       </ImageView>
-      <Label fx:id="ScoreLabel1" layoutX="135.0" layoutY="160.0" text="Score" />
-      <Label fx:id="BestScoreLabel1" layoutX="138.0" layoutY="224.0" text="Best" />
-      <Button layoutX="56.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchToLanding" prefHeight="53.0" prefWidth="51.0" text="Home" />
-      <Button layoutX="177.0" layoutY="349.0" mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="55.0" text="Play" />
+      <Label fx:id="ScoreLabel1" layoutX="135.0" layoutY="194.0" text="Score" />
+      <Label fx:id="BestScoreLabel1" layoutX="138.0" layoutY="261.0" text="Best" />
+      <Button layoutX="58.0" layoutY="349.0" mnemonicParsing="false" onAction="#switchToLanding" opacity="0.0" prefHeight="53.0" prefWidth="51.0" text="Home" />
+      <Button layoutX="177.0" layoutY="349.0" mnemonicParsing="false" onAction="#play" opacity="0.0" prefHeight="51.0" prefWidth="55.0" text="Play" />
    </children>
 </AnchorPane>

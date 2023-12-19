@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,7 +12,7 @@
    <children>
       <ImageView fitHeight="578.0" fitWidth="300.0">
          <image>
-            <Image url="@Images/gameplay.jpeg" />
+            <Image url="@Images/rock.png" />
          </image>
       </ImageView>
       <Label layoutX="115.0" layoutY="38.0" opacity="0.0" prefHeight="33.0" prefWidth="69.0" text="Current Score" />
@@ -40,6 +39,11 @@
       <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="6.0" layoutY="20.0" onMouseClicked="#switchtoPause" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/pauseButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="257.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/cherry.png" />
          </image>
       </ImageView>
    </children>
