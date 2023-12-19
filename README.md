@@ -7,6 +7,7 @@
 ## Project Description
 Stick Hero is a game where the user has to extend a stick to a certain length to cross a gap between two platforms. The user has to press the spacebar to extend the stick and release it to stop the stick. If the stick is too short or too long, the hero will fall and the game will end. If the stick is of the correct length, the hero will cross the gap and the user will get a point. The user can also collect cherries to get extra points. The game ends when the hero falls or the user presses the escape key.
 
+### Run the App.java class to play the game
 
 ## Controls
 1) Use spaceabar to extend the stick.
