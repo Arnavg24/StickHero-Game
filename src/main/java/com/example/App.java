@@ -8,16 +8,6 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
-//assumptions
-// cherry is added only when player is below while passing through the cherry
-// serialize and deserialize the game state
-// if a person collects a cherry it will be counted even if he dies in that process
-// comparator to compare the scores
-
-
-
-
-
 
 /**
  * JavaFX App
