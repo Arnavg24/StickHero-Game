@@ -1,5 +1,3 @@
-﻿# CSE201-StickHero
-
 ## Team Members
 - [x] Arnav Gupta
 - [x] Kartikeya Chhikara
@@ -26,7 +24,7 @@ Stick Hero is a game where the user has to extend a stick to a certain length to
 4) Serialization Pattern: This pattern is used to save and load the game state. The saveState, loadState, PauseSaveState, and PauseLoadState methods in the Gameplay class are examples of this pattern.
 
 
-# JUnit Test Cases
+## JUnit Test Cases
 Test cases have a separate package and a runner class testing 3-4 different test cases.They basically check collision functions and the the save/load game serialised functions
 
 
