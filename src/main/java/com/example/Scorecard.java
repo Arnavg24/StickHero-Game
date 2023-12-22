@@ -92,6 +92,7 @@ public class Scorecard extends Page implements GoToLandingPage{
     public void revive(ActionEvent event) throws IOException {
         int cherryCount = Gameplay.getCherryCount();
         if (cherryCount >= cherryReq) {
+            int a = cherryCount - cherryReq;
             Gameplay.setCherryCount(cherryCount - cherryReq);
             play(event);
         } else {

@@ -146,9 +146,9 @@ public class Gameplay extends Thread implements HeroMovement,GoToLandingPage{
             }
 
             if(collisionDetection()){
-                cherryCount++;
+//                this.get
                 Cherry.setText(String.valueOf(getCherryCount()));
-                System.out.println("Cherry count: " + cherryCount);
+                //System.out.println("Cherry count: " + cherryCount);
 
             }
             if(collisionHeroPlatform()){
@@ -198,7 +198,7 @@ public class Gameplay extends Thread implements HeroMovement,GoToLandingPage{
             forward();
 
         });
-        System.out.println(stick.getRotate());
+       // System.out.println(stick.getRotate());
     }
 
     @Override
@@ -303,13 +303,13 @@ public class Gameplay extends Thread implements HeroMovement,GoToLandingPage{
 
     public void check(){
         double stickDistance = stick.getLayoutX() - stick.getEndY();
-        System.out.println(stick.getEndY());
-        System.out.println("stick distance: " + stickDistance + "\n");
-        System.out.println("platform2 coord: " + platform2.getLayoutX() + "\n");
+       // System.out.println(stick.getEndY());
+       // System.out.println("stick distance: " + stickDistance + "\n");
+       // System.out.println("platform2 coord: " + platform2.getLayoutX() + "\n");
 
 
         if(stickDistance >= platform2.getLayoutX() && stickDistance <= platform2.getLayoutX() + platform2.getWidth()){
-            System.out.print("valid\n");
+            //System.out.print("valid\n");
             release = false;
             valid = true;
             if(!isFalling) {
@@ -317,14 +317,14 @@ public class Gameplay extends Thread implements HeroMovement,GoToLandingPage{
                 int a= this.getScore();
                 this.setScore(a+1);
                 ScoreLabel.setText(String.valueOf(this.getScore()));
-                System.out.println("Current score: " + score);
+                //System.out.println("Current score: " + score);
                 updateHighScore();
-                System.out.println("current high score: " + highScore);
+                //System.out.println("current high score: " + highScore);
                 saveState(this.score, cherryCount, highScore);
             }
         }
         else{
-            System.out.print("invalid\n");
+            //System.out.print("invalid\n");
             valid = false;
             heroDrop();
 //            this.score=0;
@@ -575,4 +575,5 @@ public class Gameplay extends Thread implements HeroMovement,GoToLandingPage{
     public void setFalling(boolean falling) {
         isFalling = falling;
     }
+
 }
